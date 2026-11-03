@@ -1,0 +1,31 @@
+openapi: 3.0.3
+info:
+  title: APZ Markdown Dashboard API
+  version: 1.0.0
+servers:
+  - url: http://localhost:3001
+paths:
+  /health:
+    get:
+      responses:
+        '200': {description: OK}
+  /api/auth/login:
+    post:
+      requestBody:
+        required: true
+      responses:
+        '200': {description: JWT token}
+  /api/docs:
+    get:
+      responses:
+        '200': {description: Documents}
+    post:
+      security: [{bearerAuth: []}]
+      responses:
+        '201': {description: Created}
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
