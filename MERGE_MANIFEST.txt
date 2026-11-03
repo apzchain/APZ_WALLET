@@ -1,0 +1,7 @@
+APZ Wallet merge manifest
+
+Active app: www/ (configurable PWA / Capacitor webDir)
+Original archive preserved under: legacy-source/APZ_WALLET--main/
+Network: unconfigured by design (no guessed RPC or Chain ID)
+Android artifact: no APK included; build not executed here
+Security status: development starter; not independently audited
